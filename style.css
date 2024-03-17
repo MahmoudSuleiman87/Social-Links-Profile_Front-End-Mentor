@@ -1,0 +1,98 @@
+:root {
+  --Green-color: hsl(75, 94%, 57%);
+  --White-color: hsl(0, 0%, 100%);
+  --grey-color: hsl(0, 0%, 20%);
+  --d-grey-color: hsl(0, 0%, 12%);
+  --o-black-color: hsl(0, 0%, 8%);
+  --font-family: "Inter", sans-serif;
+  --font-size: 14px;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+}
+
+/* ^ General Stylying */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ^ Card Styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--o-black-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: var(--d-grey-color);
+  min-width: 350px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.card-info h1 {
+  color: var(--White-color);
+  font-size: 24px;
+  padding: 20px 0 8px;
+}
+
+.card-info h2 {
+  color: var(--Green-color);
+  font-size: var(--font-size);
+  padding: 5px 0 20px;
+}
+
+.card-info p {
+  color: var(--White-color);
+  font-size: var(--font-size);
+  padding: 5px 0 20px;
+}
+
+.card-links button {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  color: var(--White-color);
+  background-color: var(--grey-color);
+  padding-block: 18px;
+  width: 100%;
+  margin-block: 8px;
+  cursor: pointer;
+  font-weight: var(--fw-bold);
+  transition: all 500ms;
+}
+
+.card-links button:hover {
+  background-color: var(--Green-color);
+  color: var(--o-black-color);
+}
+
+/* ^ Media Queries */
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 20px;
+  }
+
+  .card-links button {
+    width: 95%;
+  }
+}
