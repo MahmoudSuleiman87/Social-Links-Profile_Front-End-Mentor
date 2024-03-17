@@ -38,7 +38,7 @@ body {
 .container {
   background-color: var(--d-grey-color);
   min-width: 350px;
-  padding: 30px;
+  padding: 50px 35px 40px;
   text-align: center;
   border-radius: 10px;
 }
@@ -52,7 +52,7 @@ img {
 .card-info h1 {
   color: var(--White-color);
   font-size: 24px;
-  padding: 20px 0 8px;
+  padding: 30px 0 8px;
 }
 
 .card-info h2 {
@@ -73,7 +73,7 @@ img {
   border-radius: 8px;
   color: var(--White-color);
   background-color: var(--grey-color);
-  padding-block: 18px;
+  padding-block: 12px;
   width: 100%;
   margin-block: 8px;
   cursor: pointer;
